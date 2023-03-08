@@ -16,7 +16,6 @@
             try {
                 const response = await fetch('https://cheery-beignet-5666e6.netlify.app/.netlify/functions/api/pizza');
                 const data = await response.json();
-                console.log(data.name);
                 pizzaContainer.innerHTML = `
                     <h2>${data.name}</h2>
                     <p>${data.description}</p>
