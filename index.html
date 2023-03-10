@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Macy's Random Instagram Pizza Picker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -23,8 +24,8 @@
                 `;
                 pizzaContainer.style.display = 'flex'; // Show the pizza container
             } catch (error) {
-            console.error(error);
-            pizzaContainer.innerHTML = 'Error generating random pizza';
+                console.error(error);
+                pizzaContainer.innerHTML = 'Error generating random pizza';
             }
         });        
     </script>
